@@ -22,6 +22,10 @@ end
 
 gem 'jquery-rails'
 
+# need to be installed in case you want to run, rails server
+# you can however use other kinds of js interpeters
+gem 'therubyracer'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
