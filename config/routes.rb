@@ -1,4 +1,13 @@
 Store::Application.routes.draw do
+  get "home/index"
+
+  resources :products do
+    member do
+      get "add_to_cart"
+    end
+  end
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -15,7 +24,7 @@ Store::Application.routes.draw do
 
   # Sample resource route with options:
   #   resources :products do
-  #     member do
+  #     member dop
   #       get 'short'
   #       post 'toggle'
   #     end
@@ -48,7 +57,7 @@ Store::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 
